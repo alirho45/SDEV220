@@ -36,9 +36,10 @@ while True:
 
     print(f"\nStudent: {first_name} {last_name}")
     if gpa >= 3.5:
-        print("Congratulations! You've made the Dean's List.\n")
+        print("You have made the Dean's List.\n")
     elif gpa >= 3.25:
-        print("Great job! You've made the Honor Roll.\n")
+        print("You have made the Honor Roll.\n")
     else:
-        print("Keep working hard! You can do it.\n")
+        print("Believe in Yourself! You can do it.\n")
         
+
