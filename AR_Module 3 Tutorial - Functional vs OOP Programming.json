@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "kernelspec": {
+      "name": "xpython",
+      "display_name": "Python 3.13 (XPython)",
+      "language": "python"
+    },
+    "language_info": {
+      "file_extension": ".py",
+      "mimetype": "text/x-python",
+      "name": "python",
+      "version": "3.13.1"
+    }
+  },
+  "nbformat_minor": 5,
+  "nbformat": 4,
+  "cells": [
+    {
+      "id": "d4573d59-bdc6-4f70-8ae8-3019d7b13e40",
+      "cell_type": "code",
+      "source": "# Alisha Rhodes\n# Sort an Array of 0s, 1s, and 2s\n# 11/17/2025\n\nclass Solution:\n    def sort012(self, arr):\n        arr.sort()\n        return(arr)\n\n",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [],
+      "execution_count": null
+    },
+    {
+      "id": "dd0abcdd-1881-4b0e-bf74-a6926a7f3ba9",
+      "cell_type": "code",
+      "source": "# Alisha Rhodes\n# Binary Search\n# 11/17/2025\nclass Solution:\n    def binarysearch(self, arr, k):\n        low = 0\n        high = len(arr) - 1\n        result = -1\n        \n        while low <= high:\n            mid = (low + high) // 2\n            \n            # If k is found\n            if arr[mid] == k:\n                result = mid\n                high = mid - 1   \n                # keep searching left for smallest index\n                \n            # If k is greater, search right\n            elif arr[mid] < k:\n                low = mid + 1\n            # If k is smaller, search left\n            else:\n                high = mid - 1\n    \n        return result",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [],
+      "execution_count": null
+    }
+  ]
+}
