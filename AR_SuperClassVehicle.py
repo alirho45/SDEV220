@@ -58,6 +58,7 @@ def main():
             break
 
 
-# Run the app
+# Run application
 if __name__ == "__main__":
     main()
+
